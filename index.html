@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+
+  <body>
+    <nav>
+      <img src="./img/kt.svg" alt="" style="max-height: 20px;"></img>
+      <div class="nav-container">
+        <div class="nav-item">Solutions</div>
+        <div class="nav-item">Docs</div>
+        <div class="nav-item">Community</div>
+        <div class="nav-item">Teach</div>
+        <div class="nav-item">Play</div>
+        <div class="nav-item">
+          <img src="./img/search.svg" alt="">
+        </div>
+      </div>
+    </nav>
+
+    <div id="hero">
+      <div style="display: flex; flex-direction: column;">
+        <h1>Consice.<br>Multiplatform.<br>Fun.</h1>
+        <img src="./img/get.png" style="height: 52px; width: 472px;">
+      </div>
+
+      <canvas id="canvas3d"></canvas>
+    </div>
+
+    <img src="./img/blog.png" alt="" style="width: 1144px;">
+    <img src="./img/code.png" alt="" style="width: 1144px;">
+
+    <!-- Import maps polyfill -->
+    <!-- Remove this when import maps will be widely supported -->
+    <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@0.9.411/build/runtime.js"
+        }
+      }
+    </script>
+
+    <script type="module" src="./main2.js"></script>
+  </body>
+</html>
